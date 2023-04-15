@@ -3,7 +3,7 @@ pipeline{
 		docker{
 			label 'docker'
 			image 'python:3'
-		{
+		}
 	}
 	stages{
 		stage('Compile'){
@@ -22,7 +22,7 @@ pipeline{
 				sh 'python3 -m unittest adder.py'
 			}
 		}
-	}
+		}
 	}
 
 }
