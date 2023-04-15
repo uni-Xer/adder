@@ -1,4 +1,9 @@
 pipeline{
+	agent{
+		dockerfile{
+			label 'inbound'
+		}
+	}
 	stages{
 		stage('Compile'){
 			steps{
