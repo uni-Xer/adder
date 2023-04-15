@@ -1,10 +1,4 @@
 pipeline{
-	agent{
-		docker{
-			label 'inbound'
-			image 'python:3'
-		}
-	}
 	stages{
 		stage('Compile'){
 			steps{
