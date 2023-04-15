@@ -7,17 +7,17 @@ pipeline{
 	}
 	stages{
 		stage('Compile'){
-			step{
+			steps{
 				sh 'python3 -m compileall adder.py'
 			}
 		}
 		stage('Run'){
-			step{
+			steps{
 				sh 'python3 adder.py 3 5'
 			}
 		}
 		stage('Unit Test'){
-			step{
+			steps{
 				sh 'python3 -m unittest adder.py'
 			}
 		}
