@@ -1,7 +1,7 @@
 pipeline{
 	agent{
 		docker{
-			label 'inbound'
+			label 'agent-aws'
 			image 'python:3'
 		}
 	}
