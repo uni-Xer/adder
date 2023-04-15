@@ -1,7 +1,7 @@
 pipeline{
 	agent{
 		docker{
-			label 'docker'
+			label 'inbound'
 			image 'python:3'
 		}
 	}
