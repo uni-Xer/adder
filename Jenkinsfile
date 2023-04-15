@@ -1,6 +1,6 @@
 pipeline{
 	agent{
-		docker{
+		podman{
 			label 'inbound'
 			image 'python:3'
 		}
