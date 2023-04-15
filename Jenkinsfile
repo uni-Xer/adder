@@ -16,13 +16,10 @@ pipeline{
 				sh 'python3 adder.py 3 5'
 			}
 		}
-	}
 		stage('Unit Test'){
 			step{
 				sh 'python3 -m unittest adder.py'
 			}
 		}
-		}
 	}
-
 }
