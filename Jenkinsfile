@@ -1,7 +1,8 @@
 pipeline{
 	agent{
-		dockerfile{
+		docker{
 			label 'inbound'
+			image 'python:3'
 		}
 	}
 	stages{
