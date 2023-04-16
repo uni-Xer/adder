@@ -1,8 +1,7 @@
 pipeline{
 	agent{
-		docker{
+		dockerfile{
 			label 'agent-aws'
-			image 'python:3'
 		}
 	}
 	stages{
